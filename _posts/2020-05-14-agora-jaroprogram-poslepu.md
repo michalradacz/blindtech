@@ -1,5 +1,5 @@
 ---
-title. Jarní Agora má venku program
+title: Jarní Agora má venku program
 author: poslepu.cz
 tags: [agora, akce a události]
 ---
