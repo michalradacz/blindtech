@@ -2,8 +2,8 @@ remote_theme: rohanchandra/type-theme
 
 
 # SITE CONFIGURATION
-baseurl: "blindtech/"
-url: "https://michalradacz.github.io/"
+baseurl: "/"
+url: "http://www.blindtech.ga"
 
 
 
