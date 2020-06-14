@@ -1,4 +1,5 @@
-"Živě: Květnová aktualizace Windows přinese spoustu novinek v přístupnosti ale revoluci nečekejte"
+--- 
+title: "Živě: Květnová aktualizace Windows přinese spoustu novinek v přístupnosti ale revoluci nečekejte"
 author: Živě.cz
 tags: [windows, přístupnost, microsoft]
 ---
