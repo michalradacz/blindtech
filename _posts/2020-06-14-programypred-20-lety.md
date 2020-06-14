@@ -1,6 +1,6 @@
 ---
-Title: Vzpomeňme si se serverem Živě na dvacet let staré programy pro naše pécéčka
-Subtitle: <ul><li>Na PC před 20 lety frčely poslední Windows 9x a to Windows 98 SE a poté Windows ME, W2000 nastupovali jako zjevení<li>Průzkumník byl na pěst, ještě že tu byl Windows Commander, předchůdce Total commanderu<li>Jaws už existoval, NVDA samozřejmě ne. Alternativy pro Jaws vznikaly, třeba WinMonitor nebo WinTalker</ul>
+title: Vzpomeňme si se serverem Živě na dvacet let staré programy pro naše pécéčka
+subtitle: <ul><li>Na PC před 20 lety frčely poslední Windows 9x a to Windows 98 SE a poté Windows ME, W2000 nastupovali jako zjevení<li>Průzkumník byl na pěst, ještě že tu byl Windows Commander, předchůdce Total commanderu<li>Jaws už existoval, NVDA samozřejmě ne. Alternativy pro Jaws vznikaly, třeba WinMonitor nebo WinTalker</ul>
 author: Živě.cz
 tags: [screenreadery, historie, zajímavosti]
 ---
