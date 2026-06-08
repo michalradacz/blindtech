@@ -1,4 +1,1 @@
-# Aktuality
-
-...už se to blíží...
-
+# Nástěnka
