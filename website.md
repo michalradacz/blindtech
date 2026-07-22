@@ -58,6 +58,37 @@ Ale my buďme v klidu, samozřejmě je to jen v některých jazycích, respektiv
 
 Articles
 
+## Collections
+
+Tagy: Produktivita, iOS, iPadOS, MacOS, Přístupnost 5 z 5
+
+Komplexní ale uživatelsky jednoduchá Databázová aplikace pro osobní databáze čehokoliv<br>Produktivita / iOS, iPadOS, MacOS / přístupnost 5 z 5
+
+### Podrobnější popis
+
+Univerzální databázová aplikace, ve které si databázi čehokoliv může udělat opravdu každý.<p>Co se mi líbí<ul><li>Naprostá volnost evidence čehokoliv. Vše je buď Collection (Kolekce) a v něm entity (druh) a jednotlivé documents (dokumenty). Máte tak neomezené možnosti databáze<li>Jednoduché na pochopení fungování, využívá standardní mechanismy, jako je tlačítko Zpět, nadpis okem, rozložení nabídky vpravo, apod. Ve všech částech aplikace se chová stejně<li>U záznamu můžete přes tlačítko More sdílet obsah daného záznamu, co je ale skvělé, je že si můžete před sdílením vybrat jen ta pole, co chcete sdílet.  <li>Skvěle vyřešené filtrování přes rychlé indexy. Pokud si v databázi přes More/ Indexes vytvoříte filtr a klepnete vedle něj na Favorite, objeví se vám nad záznamy sbalovací lišta s takovými rychlými filtry  <li>U filtrování podle data lze vybrat nejen konkrétní datum, ale třeba jen Srpen 2024 a všechny záznamy, to je také ojedinělé  <li>Export do CSV a JSON podle obecných schémat  <li>Na iPadu trojsloupcové rozhraní, sidebar s databázemi, záznamy v databázi a v pravo ještě detail záznamu</ul>
+
+### Popis přístupnosti
+
+Autor aplikace na přístupnost dbá. Neřeší ale pouze přístupnost pro nevidomé, ale také i pro ostatní skupiny specifických uživatelů. Aplikace je s odečítačem plně funkční a ovladatelná, jediný problém je s ovládáním hodnot v pokročilých filtrech, ale i ten s trochou cviku má svoje řešení s odečítačem. Navíc s autorem komunikujeme A jednotlivé maličkosti postupně opravuje. Na první pohled se může zdát aplikace složitá, ale jakmile si osvojíte její základy, budete s ní schopni naprosto plnohodnotně pracovat
+
+### Stručně k ovládání
+
+Aplikace má některé jednoduché mechanismy, ale dají se s ní vytvářet velice detailní a komplexní věci. Nejprve zde máme obrazovku Collections (kolekce neboli databáze), Vytvoříme si první kolekci a ještě lepší je si pro ilustraci stáhnout předpřipravené databáze (jen v angličtině). Databáze může mít více druhů záznamů (entity) a každý záznam tak může být buď obecný dokument (document) a nebo typ (entity). Platí, že nastavení polí filtrů a chování je pro jednotlivé entity odlišné, ale můžete například jedno pole zobrazovat jen ve dvou ze tří entit apod.<p>Obrazovka se záznamy má výpis všech záznamů podle filtru. Filtry si vytváříte v menu pod Indexes, kde si vše pohodlně nastavíte a pokud je to filtr častý pro vaše použití, dáte u něj Favorite a on se bude zobrazovat v nové části s rychlými filtry nad záznamy. Sekce v záznamech mají nadpis, takže se po nich skvěle pohybuje s VoiceOverem. Otevření záznamu zobrazí jeho celý detail, tlačítko Compose pak přejde do editoru záznamu. Chování a funkce u polí v editoru i v detailu záznamu se liší podle toho, jaký typ pole si nadefinujete.<p>Asi vás ale bude zajímat, jak si databázi vytvořit. Při vytváření nové kolekce má vždy jen jedno pole s názvem Text. Přes menu Fields si upravujete, přidáváte a přetahujete pořadí vlastních polí. Je jich víc jak 30 typů, takže se tady nebudu rozepisovat, ostatně znalost angličtiny alespoň základní, bude stačit.
+
+### Odkazy
+
+* Apple AppStore: https://apps.apple.com/app/id1568395334
+* Google Play: 
+* Webová aplikace: 
+* Webové stránky aplikace: https://collectionsdb.com/
+
+[Nápověda k Collections](https://collectionsdb.com/en/help/get-started)
+
+### Další informace
+
+
+
 ## Outliner
 
 Tagy: Databáze, Dokumenty,, Web, Přístupnost 5 z 5
