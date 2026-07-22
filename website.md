@@ -54,10 +54,41 @@ Hlavní linkou je pochopitelně AI. V kombinaci s Visual intelligence můžeme p
 
 Ale my buďme v klidu, samozřejmě je to jen v některých jazycích, respektive jen v angličtině.
 
-
 # Aplikace
 
 Articles
+
+## Outliner
+
+Tagy: Databáze, Dokumenty,, Web, Přístupnost 5 z 5
+
+Pokročilý webový outline editor, obdoba OmniOutlineru nebo Cargo Outlineru<br>Databáze, Dokumenty, / Web / přístupnost 5 z 5
+
+### Podrobnější popis
+
+Tato aplikace umožňuje editovat takzvaný Outliner neboli dokument, který je hierarchickým stromem jednotlivých částí, ve kterém mohou mít svoje podčásti a další podčásti a takhle se vlastně skládá dohromady to, co potřebujete. Je to velice univerzální nástroj. Můžete v tom dělat jak dokumenty, tak ale třeba i nějaké nákupní seznamy nebo seznamy úkolů. Aplikace má velice pokročilé funkce, jako například typ záznamu,  jednotlivé úrovně nadpisů, úplnou podporu formátu OPML a nebo export do formátu HTML a dokonce i DOCX a Markdown. Kromě samotného obsahu řádku lze přidávat i další sloupce, sloupec přitom může být číslo, datum, text, zaškrtávátko, čas, trvání a nebo výběr ze seznamu. Kombinuje se tak hierarchie a databáze.
+
+### Popis přístupnosti
+
+Aplikace je webová a je stoprocentně přístupná. Používá jen standardní HTML UI prvky, ovládání s odečítačem a to včetně rychlé navigace funguje skvěle. Navíc má aplikace popsané klávesové zkratky pro pohyb a manipulaci s řádky outlineru a další funkce. Odečítač čte při pohybu osnovou podrobné informace a třeba přes klávesu I přečte veškeré atributy daného řádku.
+
+### Stručně k ovládání
+
+Aplikace je plně webová, jedná se o jednosouborovou aplikaci, kterou můžete provozovat jak online na internetu, tak si ji stáhnout z GitHubu jako jeden HTML soubor a používat ji ve svém prohlížeči i bez připojení k internetu. Protože se jedná o poměrně pokročilý nástroj s mnoha různými funkcemi, může se na první pohled zdát ovládání trochu složité, ale velice rychle si najdete svůj způsob. Aplikace je ve skutečnosti jednou webovou stránkou, která má v horní části běžná tlačítka pro otevření a uložení a import a export projektu. Ale taky tlačítka pro zkopírování celého projektu do schránky nebo vložení ze schránky.  Dále jsou v aplikaci postranní panely, kde je jednak struktura dokumentu a jednak jsou tam věci, které lze pro jednotlivé projekty a dokumenty nastavit. Tady se nastavuje například číslování řádků, jednotlivé dodatečné sloupce a jejich atributy a nebo typy a úrovně nadpisů pro jednotlivé úrovně hierarchie stromu.  Hlavní část okna zabírá osnova, která je uvozena nadpisy a v rámci této osnovy je potom realizována tvorba a úprava jednotlivých řádků, jejich  odsazování v rámci hierarchie, včetně přesunu a změny úrovně, ale také úprava jednotlivých sloupců v daném řádku, která se realizuje v samostatném okně editoru, aby to celé bylo přístupné.  Samotná aplikace nabízí možnost otevření ukázkového souboru a má v sobě poměrně podrobnou nápovědu včetně informací o klávesovém ovládání.
+
+### Odkazy
+
+* Apple AppStore: 
+* Google Play: 
+* Webová aplikace: https://nastroje.egdilna.cz/outliner
+* Webové stránky aplikace: https://nastroje.egdilna.cz/#outliner
+
+
+
+### Další informace
+
+Aplikace vznikla jako přístupná pokročilá alternativa nástrojů typu OmniOutliner a dalších.
+
 
 # Návody
 
