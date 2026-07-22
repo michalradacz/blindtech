@@ -1,9 +1,12 @@
 # Nástěnka
 
-ℹ️ Ano, ooooooooooživili jsme BlindTech...
+ℹ️ Ano, oživili jsme BlindTech...
 
 
 ## Co je nového?
+
+22.7.2026: Přesouvám sem [[databázi přístupných apliokací]](#aplikace) a postupně je sem budeme házet.
+
 
 20.7.2026: Nová sekce [Chyby v OS Apple](#chyby-v-os-apple) kde jak sám název napovídá budeme sbírat informace o chybách v iOS/iPadOS/MacOS stran přístupnosti. Tak se tam nezapomeňte občas mrknout.
 
