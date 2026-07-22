@@ -878,8 +878,10 @@ mark.critic {
   font-family: var(--font-heading);
   font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: .35rem;
+  margin: 0 0 .35rem;
+  padding: 0;
   line-height: 1.3;
+  border: none;
 }
 .article-card-title a {
   color: var(--color-primary);
@@ -1180,6 +1182,98 @@ mark.critic {
   .sidebar-inner { grid-template-columns: 1fr; }
 }
 
+/* ===== EMOJI PARAGRAPHS ===== */
+.ep {
+  padding: .85rem 1.1rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  border-left: 4px solid;
+  display: flex;
+  gap: .65rem;
+  align-items: flex-start;
+  line-height: 1.6;
+}
+.ep-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  line-height: 1.4;
+  user-select: none;
+}
+.ep-body { flex: 1; min-width: 0; }
+.ep-body p { margin: 0; }
+
+/* 🔴 ❗ ‼️ — Důležité upozornění / chyba — červená */
+.ep-danger {
+  background: #fde8e8;
+  border-left-color: #c0392b;
+  color: #7b1a1a;
+  box-shadow: 0 2px 8px rgba(192,57,43,.15);
+}
+/* ⚠️ 🟡 — Varování — žlutá/oranžová */
+.ep-warning {
+  background: #fef9e7;
+  border-left-color: #e67e22;
+  color: #7d4e00;
+  box-shadow: 0 2px 8px rgba(230,126,34,.12);
+}
+/* ✅ 💚 🟢 — Tip / úspěch — zelená */
+.ep-success {
+  background: #e8f8f0;
+  border-left-color: #27ae60;
+  color: #145a32;
+  box-shadow: 0 2px 8px rgba(39,174,96,.12);
+}
+/* ℹ️ 💡 🔵 — Informace / tip — modrá */
+.ep-info {
+  background: #eaf4fb;
+  border-left-color: #2980b9;
+  color: #1a3a5c;
+  box-shadow: 0 2px 8px rgba(41,128,185,.12);
+}
+/* 📌 🗒️ — Poznámka — šedá */
+.ep-note {
+  background: #f4f4f4;
+  border-left-color: #7f8c8d;
+  color: #2c3e50;
+  box-shadow: 0 2px 8px rgba(127,140,141,.1);
+}
+/* 🔒 🛡️ — Bezpečnost — tmavě modrá */
+.ep-security {
+  background: #eaf0fb;
+  border-left-color: #1a3a6b;
+  color: #1a3a6b;
+  box-shadow: 0 2px 8px rgba(26,58,107,.15);
+}
+/* 💜 🟣 — Poznámka autora / zajímavost — fialová */
+.ep-purple {
+  background: #f5eef8;
+  border-left-color: #8e44ad;
+  color: #4a235a;
+  box-shadow: 0 2px 8px rgba(142,68,173,.12);
+}
+/* 🔥 — Horká novinka / trending — oranžová sytá */
+.ep-hot {
+  background: #fef0e7;
+  border-left-color: #e74c3c;
+  color: #7b2d00;
+  box-shadow: 0 2px 8px rgba(231,76,60,.15);
+}
+/* 📖 — Citace / definice — krémová */
+.ep-quote {
+  background: #fdfaf3;
+  border-left-color: #c9873a;
+  color: #5a4010;
+  box-shadow: 0 2px 8px rgba(201,135,58,.1);
+  font-style: italic;
+}
+/* 🚧 ⚙️ — Rozpracováno / technické — tmavě šedá */
+.ep-wip {
+  background: #f0f0f0;
+  border-left-color: #555;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
 /* ===== PRINT ===== */
 @media print {
   #site-nav, #toolbar, #sidebar, #site-footer { display: none; }
@@ -1297,14 +1391,21 @@ const Engine = (() => {
   let currentSection = null;
 
   // --- Fetch helpers ---
+  // Cache-busting: append a timestamp query param and disable the HTTP cache,
+  // so every page load always gets the current website.json / website.md /
+  // sidebar.md — not a stale cached copy from the browser or an intermediate CDN.
+  function bustCache(url) {
+    const sep = url.includes('?') ? '&' : '?';
+    return url + sep + '_=' + Date.now();
+  }
   async function fetchText(url) {
-    const r = await fetch(url);
+    const r = await fetch(bustCache(url), { cache: 'no-store' });
     if (!r.ok) throw new Error(`HTTP ${r.status}: ${url}`);
     const text = await r.text();
     return text.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
   }
   async function fetchJSON(url) {
-    const r = await fetch(url);
+    const r = await fetch(bustCache(url), { cache: 'no-store' });
     if (!r.ok) throw new Error(`HTTP ${r.status}: ${url}`);
     return r.json();
   }
@@ -1320,6 +1421,42 @@ const Engine = (() => {
   // =============================================
   //  MARKDOWN PARSER
   // =============================================
+
+  // Emoji → CSS třída odstavce
+  const EMOJI_P = [
+    { re: /^(❗|‼️|🔴|🚨)/, cls: 'ep-danger' },
+    { re: /^(⚠️|🟡|🟠)/, cls: 'ep-warning' },
+    { re: /^(✅|💚|🟢|☑️)/, cls: 'ep-success' },
+    { re: /^(ℹ️|💡|🔵|👉)/, cls: 'ep-info' },
+    { re: /^(📌|🗒️|📋|🗺️|📝)/, cls: 'ep-note' },
+    { re: /^(🔒|🛡️|🔐|🔑)/, cls: 'ep-security' },
+    { re: /^(💜|🟣|💫)/, cls: 'ep-purple' },
+    { re: /^(🔥|🚀|⚡)/, cls: 'ep-hot' },
+    { re: /^(📖|💬|🗣️|✍️)/, cls: 'ep-quote' },
+    { re: /^(🚧|⚙️|🛠️|🔧)/, cls: 'ep-wip' },
+  ];
+
+  function wrapEmojiParagraph(html) {
+    // Najdi <p> začínající emoji a obal ho do .ep struktury
+    return html.replace(/<p>([\s\S]*?)<\/p>/g, (match, inner) => {
+      // Odstraň leading whitespace/nbsp
+      const trimmed = inner.trimStart();
+      for (const { re, cls } of EMOJI_P) {
+        if (re.test(trimmed)) {
+          // Extrahuj emoji (1-2 znaky unicode)
+          const emojiMatch = trimmed.match(/^(\S+)\s*/);
+          const emoji = emojiMatch ? emojiMatch[1] : '';
+          const rest = trimmed.slice(emoji.length).trimStart();
+          return `<div class="ep ${cls}" role="note">` +
+            `<span class="ep-icon">${emoji}</span>` +
+            `<div class="ep-body">${rest}</div>` +
+            `</div>`;
+        }
+      }
+      return match;
+    });
+  }
+
   function parseMD(md, basePath) {
     let html = md;
 
@@ -1414,6 +1551,9 @@ const Engine = (() => {
     // Restore code
     html = html.replace(/\x00CODE(\d+)\x00/g, (_, i) => codeBlocks[i]);
     html = html.replace(/\x00ICODE(\d+)\x00/g, (_, i) => inlineCodes[i]);
+
+    // Wrap emoji paragraphs
+    html = wrapEmojiParagraph(html);
 
     return html;
   }
@@ -1704,7 +1844,7 @@ const Engine = (() => {
     // Build TOC
     buildTOC(sec.headings);
 
-    // Render news items into page (before TOC/links — must happen after innerHTML set)
+    // Render news items
     if (sec.hasNews && sec.newsItems && sec.newsItems.length) {
       renderNewsItems(sec.newsItems, pageContent);
     }
@@ -1836,7 +1976,6 @@ const Engine = (() => {
 
   // Parse rawContent and split into news items + regular MD
   // Returns { hasNews, newsItems, regularMD }
-  // newsItems: [{isoKey, date, title, bodyMD}]
   function extractNewsItems(rawContent) {
     const lines = rawContent.split('\n');
     const newsItems = [];
@@ -1848,23 +1987,15 @@ const Engine = (() => {
       const parsed = parseNewsDate(line.trim());
 
       if (parsed) {
-        // First line after date prefix is the title (inline rest of line)
-        // Subsequent indented/non-empty lines before next date entry are the body
         const titleFirstLine = parsed.rest;
         const bodyLines = [];
-
         i++;
         while (i < lines.length) {
-          const nextLine = lines[i];
-          // Stop if next line starts a new news item
-          if (parseNewsDate(nextLine.trim())) break;
-          bodyLines.push(nextLine);
+          if (parseNewsDate(lines[i].trim())) break;
+          bodyLines.push(lines[i]);
           i++;
         }
-
-        // Trim trailing empty lines from body
         while (bodyLines.length && !bodyLines[bodyLines.length - 1].trim()) bodyLines.pop();
-
         newsItems.push({
           isoKey: parsed.isoKey,
           date: parsed.date,
@@ -1879,7 +2010,7 @@ const Engine = (() => {
 
     return {
       hasNews: newsItems.length > 0,
-      newsItems: newsItems.sort((a, b) => b.date - a.date), // newest first
+      newsItems: newsItems,
       regularMD: regularLines.join('\n')
     };
   }
@@ -1902,7 +2033,7 @@ const Engine = (() => {
       const header = document.createElement('div');
       header.className = 'news-date-header';
       header.innerHTML =
-        `<span class="news-date-icon" aria-hidden="true">📅</span>` +
+        `<span class="news-date-icon">📅</span>` +
         `<span class="news-dow">${escHtml(dow)}</span>` +
         `<span class="news-date">${escHtml(dateStr)}</span>`;
 
@@ -2112,8 +2243,8 @@ const Engine = (() => {
 
   // Format article date
   function formatArticleDate(art) {
-    if (art.date) return formatNewsDate(art.date).dateStr;
-    return art.dateRaw || '';
+    if (art.date) return formatNewsDate(art.date);
+    return { dow: '', dateStr: art.dateRaw || '' };
   }
 
   function clearSidebarPanels() {
@@ -2178,17 +2309,19 @@ const Engine = (() => {
       pageContent.innerHTML = headerHTML + `<p>${lang.no_articles || 'Žádné články pro tento tag.'}</p>`;
     } else {
       const listHTML = filtered.map(art => {
-        const dateStr = formatArticleDate(art);
+        const { dow: artDow, dateStr: artDateStr } = formatArticleDate(art);
         const tagsHTML = art.tags.map(t =>
           `<button class="tag-badge${activeTag && t.toLowerCase() === activeTag.toLowerCase() ? ' active' : ''}" type="button" data-tag="${escAttr(t)}">${escHtml(t)}</button>`
         ).join(' ');
         return `<li class="article-card" data-slug="${escAttr(art.slug)}">
-          <div class="article-card-title"><a href="#${escAttr(sec.slug)}/${escAttr(art.slug)}">${escHtml(art.title)}</a></div>
-          <div class="article-card-meta">
-            ${dateStr ? `<span class="article-card-date">📅 ${escHtml(dateStr)}</span>` : ''}
-            ${tagsHTML}
-          </div>
-          <div class="article-card-perex">${art.parsedPerex}</div>
+          <article aria-labelledby="art-title-${escAttr(art.slug)}">
+            <h2 class="article-card-title" id="art-title-${escAttr(art.slug)}"><a href="#${escAttr(sec.slug)}/${escAttr(art.slug)}">${escHtml(art.title)}</a></h2>
+            <div class="article-card-meta">
+              ${artDateStr ? `<span class="article-card-date">📅 ${artDow ? `<span class="news-dow">${escHtml(artDow)}</span> ` : ''}<span class="news-date">${escHtml(artDateStr)}</span></span>` : ''}
+              ${tagsHTML}
+            </div>
+            <div class="article-card-perex">${art.parsedPerex}</div>
+          </article>
         </li>`;
       }).join('');
       pageContent.innerHTML = headerHTML + `<ul class="articles-list" aria-label="${lang.articles_list || 'Seznam článků'}">${listHTML}</ul>`;
@@ -2222,20 +2355,22 @@ const Engine = (() => {
     const pageContent = document.getElementById('page-content');
     clearSidebarPanels();
 
-    const dateStr = formatArticleDate(art);
+    const { dow: artDow, dateStr: artDateStr } = formatArticleDate(art);
     const tagsHTML = art.tags.map(t =>
       `<button class="tag-badge" type="button" data-tag="${escAttr(t)}">${escHtml(t)}</button>`
     ).join(' ');
 
     pageContent.innerHTML =
       `<a class="article-back" href="#${escAttr(sec.slug)}">← ${escHtml(lang.back_to_list || 'Zpět na seznam')}</a>` +
-      `<h1 class="page-title">${escHtml(art.title)}</h1>` +
+      `<article aria-labelledby="art-detail-title">` +
+      `<h1 class="page-title" id="art-detail-title">${escHtml(art.title)}</h1>` +
       `<div class="article-detail-meta">` +
-        (dateStr ? `<span>📅 ${escHtml(dateStr)}</span>` : '') +
+        (artDateStr ? `<span class="article-card-date">📅 ${artDow ? `<span class="news-dow">${escHtml(artDow)}</span> ` : ''}<span class="news-date">${escHtml(artDateStr)}</span></span>` : '') +
         tagsHTML +
       `</div>` +
       (art.parsedPerex ? `<p class="article-perex">${art.parsedPerex}</p>` : '') +
-      art.parsedBody;
+      art.parsedBody +
+      `</article>`;
 
     // Events
     pageContent.querySelector('.article-back').addEventListener('click', e => {
@@ -2632,10 +2767,19 @@ const Engine = (() => {
 
       // Load content
       loadingText.textContent = 'Načítám obsah…';
-      const mdText = await fetchText('./website.md');
+      // workpath: optional base URL for website.md and sidebar.md
+      // If set, content files are loaded from that URL instead of ./ 
+      function resolveContentUrl(filename) {
+        const wp = (config.workpath || '').trim().replace(/\/+$/, '');
+        if (!wp) return './' + filename;
+        const base = /^https?:\/\//i.test(wp) ? wp : 'https://' + wp;
+        return base + '/' + filename;
+      }
+
+      const mdText = await fetchText(resolveContentUrl('website.md'));
 
       // Load sidebar (optional)
-      try { sidebarMD = await fetchText('./sidebar.md'); } catch { sidebarMD = ''; }
+      try { sidebarMD = await fetchText(resolveContentUrl('sidebar.md')); } catch { sidebarMD = ''; }
 
       // Parse sections — groups have no rawContent, skip parsing for them
       const rawSections = splitSections(mdText);
