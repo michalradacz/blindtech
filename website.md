@@ -177,9 +177,20 @@ A pokud jste objevili něco sami a rádi byste to tady viděli, nebo se na cokol
 
 
 
-<h3><i>[Neopravená]</i> Nefunguje gesto ani klávesová zkratka VoiceOveru pro vytažení docku</h3><p>Platformy a systémy: iPadOS 27 beta 3<p>Podrobnější popis: Ani gesto Voiceoveru, ani výchozí gesto prstem nahoru a dolů a ani klasická klávesová zkratka VO+D a nebo FN+D nevysune dock. evidentně v režimu multiwindow to nefunguje ani vidícím.<p>
-<h3><i>[Neopravená]</i> Neočekávané přerušení vyslovování VoiceOverem</h3><p>Platformy a systémy: Bety iOS 27 a iPadOS 27<p>Podrobnější popis: Při mluvení VO často ztlumí řeč uprostřed, je to hrozně otravné a hlavně se tomu nedá vyhnout.<p>
-<h3><i>[Neopravená]</i> VO chybně provádí gesta svislého švihání, ale jen na iPadu</h3><p>Platformy a systémy: iPadOS 27 beta 3<p>Podrobnější popis: Na iPadu (nikoliv na iPhone což je zajímavé) při švihání doleva a doprava i když jste určitě prstem udělali gesto vodorovně, dost často VO provede gesto svisle. Dost otravné. Zajímavé je, že to dělá jen v režimu na šířku. Teda, jak se jim tohle povedlo...?<p>
-<h3><i>[Neopravená]</i> V Poznámkách VO nečte vnořené objekty</h3><p>Platformy a systémy: iOS/iPadOS/ MacOS 26<p>Podrobnější popis: V aplikace poznámky ve všech operačních systémech VoiceOver poslední verze nečte informace a ani názvy některých vnořených objektů. Na iPadu a iPhonu jde alespoň někdy vnořené webové stránky, ale jako třešnička na dortu v Macu nečte vůbec žádné informace o žádných objektech. Tím je práce s objekty v poznámkách prakticky nepoužitelná.<p>
+### [Neopravená] Nefunguje gesto ani klávesová zkratka VoiceOveru pro vytažení docku
+
+<p>Platformy a systémy: iPadOS 27 beta 3<p>Podrobnější popis: Ani gesto Voiceoveru, ani výchozí gesto prstem nahoru a dolů a ani klasická klávesová zkratka VO+D a nebo FN+D nevysune dock. evidentně v režimu multiwindow to nefunguje ani vidícím.<p>
+
+### [Neopravená] Neočekávané přerušení vyslovování VoiceOverem
+
+<p>Platformy a systémy: Bety iOS 27 a iPadOS 27<p>Podrobnější popis: Při mluvení VO často ztlumí řeč uprostřed, je to hrozně otravné a hlavně se tomu nedá vyhnout.<p>
+
+### [Neopravená] VO chybně provádí gesta svislého švihání, ale jen na iPadu
+
+<p>Platformy a systémy: iPadOS 27 beta 3<p>Podrobnější popis: Na iPadu (nikoliv na iPhone což je zajímavé) při švihání doleva a doprava i když jste určitě prstem udělali gesto vodorovně, dost často VO provede gesto svisle. Dost otravné. Zajímavé je, že to dělá jen v režimu na šířku. Teda, jak se jim tohle povedlo...?<p>
+
+### [Neopravená] V Poznámkách VO nečte vnořené objekty
+
+<p>Platformy a systémy: iOS/iPadOS/ MacOS 26<p>Podrobnější popis: V aplikace poznámky ve všech operačních systémech VoiceOver poslední verze nečte informace a ani názvy některých vnořených objektů. Na iPadu a iPhonu jde alespoň někdy vnořené webové stránky, ale jako třešnička na dortu v Macu nečte vůbec žádné informace o žádných objektech. Tím je práce s objekty v poznámkách prakticky nepoužitelná.<p>
 
 
