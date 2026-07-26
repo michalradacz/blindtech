@@ -94,9 +94,9 @@ Aplikace má některé jednoduché mechanismy, ale dají se s ní vytvářet vel
 
 ## Outliner
 
-Tagy: Databáze, Dokumenty,, Web, Přístupnost 5 z 5
+Tagy: Produktivita, Web, Přístupnost 5 z 5
 
-Pokročilý webový outline editor, obdoba OmniOutlineru nebo Cargo Outlineru<br>Databáze, Dokumenty, / Web / přístupnost 5 z 5
+Pokročilý webový outline editor, obdoba OmniOutlineru nebo Cargo Outlineru<br>Produktivita / Web / přístupnost 5 z 5
 
 ### Podrobnější popis
 
@@ -122,6 +122,37 @@ Aplikace je plně webová, jedná se o jednosouborovou aplikaci, kterou můžete
 ### Další informace
 
 Aplikace vznikla jako přístupná pokročilá alternativa nástrojů typu OmniOutliner a dalších.
+
+## Source
+
+Tagy: Vývoj, iOS, iPadOS, MacOS, Přístupnost 4,5 z 5
+
+Přímý přístup k obsahu GIT repozitářů z Finderu a nebo Souborů<br>Vývoj / iOS, iPadOS, MacOS / přístupnost 4,5 z 5
+
+### Podrobnější popis
+
+Pokud chcete přistupovat přímo k obsahu Git repozitářů, máte dvě možnosti. Buď plnohodnotný Git klient, kterých je pro Macové systémy také hodně, anebo tuhle aplikaci. Tahle aplikace vám umožní přímý přístup přes rozhraní API poskytovatele Git k obsahu repozitáře, včetně funkcí jako je stahování a nahrávání souborů a přímé commity. Skvělý a superjednoduchý nástroj nepostradatelný pro všechny vývojáře.
+
+### Popis přístupnosti
+
+Aplikace je skvěle přístupná, ale má o půl stupně snížené hodnocení za pár nepopsaných obrázků, které jsou ovšem hlavně dekorativní a funkce nemění.
+
+### Stručně k ovládání
+
+V aplikaci se udělá nastavení spojení a repozitářů a pak jsou vidět v aplikaci Soubory a nebo Finder jako file providery.
+
+### Odkazy
+
+* Apple AppStore: https://apps.apple.com/cz/app/source-files-git-storage/id6450856155?l=cs
+* Google Play: 
+* Webová aplikace: 
+* Webové stránky aplikace: https://sourcefiles.app
+
+
+
+### Další informace
+
+
 
 
 # Návody
@@ -149,5 +180,6 @@ A pokud jste objevili něco sami a rádi byste to tady viděli, nebo se na cokol
 <h3><i>[Neopravená]</i> Nefunguje gesto ani klávesová zkratka VoiceOveru pro vytažení docku</h3><p>Platformy a systémy: iPadOS 27 beta 3<p>Podrobnější popis: Ani gesto Voiceoveru, ani výchozí gesto prstem nahoru a dolů a ani klasická klávesová zkratka VO+D a nebo FN+D nevysune dock. evidentně v režimu multiwindow to nefunguje ani vidícím.<p>
 <h3><i>[Neopravená]</i> Neočekávané přerušení vyslovování VoiceOverem</h3><p>Platformy a systémy: Bety iOS 27 a iPadOS 27<p>Podrobnější popis: Při mluvení VO často ztlumí řeč uprostřed, je to hrozně otravné a hlavně se tomu nedá vyhnout.<p>
 <h3><i>[Neopravená]</i> VO chybně provádí gesta svislého švihání, ale jen na iPadu</h3><p>Platformy a systémy: iPadOS 27 beta 3<p>Podrobnější popis: Na iPadu (nikoliv na iPhone což je zajímavé) při švihání doleva a doprava i když jste určitě prstem udělali gesto vodorovně, dost často VO provede gesto svisle. Dost otravné. Zajímavé je, že to dělá jen v režimu na šířku. Teda, jak se jim tohle povedlo...?<p>
+<h3><i>[Neopravená]</i> V Poznámkách VO nečte vnořené objekty</h3><p>Platformy a systémy: iOS/iPadOS/ MacOS 26<p>Podrobnější popis: V aplikace poznámky ve všech operačních systémech VoiceOver poslední verze nečte informace a ani názvy některých vnořených objektů. Na iPadu a iPhonu jde alespoň někdy vnořené webové stránky, ale jako třešnička na dortu v Macu nečte vůbec žádné informace o žádných objektech. Tím je práce s objekty v poznámkách prakticky nepoužitelná.<p>
 
 
