@@ -193,4 +193,8 @@ A pokud jste objevili něco sami a rádi byste to tady viděli, nebo se na cokol
 
 <p>Platformy a systémy: iOS/iPadOS/ MacOS 26<p>Podrobnější popis: V aplikace poznámky ve všech operačních systémech VoiceOver poslední verze nečte informace a ani názvy některých vnořených objektů. Na iPadu a iPhonu jde alespoň někdy vnořené webové stránky, ale jako třešnička na dortu v Macu nečte vůbec žádné informace o žádných objektech. Tím je práce s objekty v poznámkách prakticky nepoužitelná.<p>
 
+### [Nová] Padá bluetooth audio
+
+<p>Platformy a systémy: iOS 27 beta 3<p>Podrobnější popis: Velice závažná chyba s VoiceOverem. Pravděpodobně díky přepracovanému přístupu systému k audiu (nově pokus o multikanálový zvuk) docela často při přehrávání zvuku z aplikací spadne audio kompletně. Jde o problém pro bluetoot a to zejména u Apple kodeku, tedy jsou dotčeni majitelé slucházek Apple. Zvuk prostě nehraje a jediný způsopb je buď se pokusit resetovat zvuk vypnutím a zapnutím displeje a nebo odpojit sluchátka (dát do krabičky) a počkat několik sekund.<p>
+
 
