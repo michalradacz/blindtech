@@ -177,9 +177,9 @@ A pokud jste objevili něco sami a rádi byste to tady viděli, nebo se na cokol
 
 
 
-### [Neopravená] Nefunguje gesto ani klávesová zkratka VoiceOveru pro vytažení docku
+### ☑️[Opravená] Nefunguje gesto ani klávesová zkratka VoiceOveru pro vytažení docku
 
-<p>Platformy a systémy: iPadOS 27 beta 3<p>Podrobnější popis: Ani gesto Voiceoveru, ani výchozí gesto prstem nahoru a dolů a ani klasická klávesová zkratka VO+D a nebo FN+D nevysune dock. evidentně v režimu multiwindow to nefunguje ani vidícím.<p>
+<p>Platformy a systémy: iPadOS 27 beta 3<p>Podrobnější popis: Ani gesto Voiceoveru, ani výchozí gesto prstem nahoru a dolů a ani klasická klávesová zkratka VO+D a nebo FN+D nevysune dock. evidentně v režimu multiwindow to nefunguje ani vidícím.<p>opraveno v beta 4
 
 ### [Neopravená] Neočekávané přerušení vyslovování VoiceOverem
 
@@ -196,5 +196,9 @@ A pokud jste objevili něco sami a rádi byste to tady viděli, nebo se na cokol
 ### [Nová] Padá bluetooth audio
 
 <p>Platformy a systémy: iOS 27 beta 3<p>Podrobnější popis: Velice závažná chyba s VoiceOverem. Pravděpodobně díky přepracovanému přístupu systému k audiu (nově pokus o multikanálový zvuk) docela často při přehrávání zvuku z aplikací spadne audio kompletně. Jde o problém pro bluetoot a to zejména u Apple kodeku, tedy jsou dotčeni majitelé slucházek Apple. Zvuk prostě nehraje a jediný způsopb je buď se pokusit resetovat zvuk vypnutím a zapnutím displeje a nebo odpojit sluchátka (dát do krabičky) a počkat několik sekund.<p>
+
+### ❗️[Nová] Nefunguje používání aplikace Soubory volané z jiné aplikace
+
+<p>Platformy a systémy: iOS 27<p>Podrobnější popis: Pokud je aplikace Soubory volána z jiné aplikace přes fileAPI (třeba pro ukládání souboru), v okamžiku kdy jakkoliv (třeba přez Zpět) se přesunete do jiné složky, tlačítko pro danou akci Uložit či Otevřít nefunguje.<p>
 
 
