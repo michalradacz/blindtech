@@ -201,4 +201,8 @@ A pokud jste objevili něco sami a rádi byste to tady viděli, nebo se na cokol
 
 <p>Platformy a systémy: iOS 27<p>Podrobnější popis: Pokud je aplikace Soubory volána z jiné aplikace přes fileAPI (třeba pro ukládání souboru), v okamžiku kdy jakkoliv (třeba přez Zpět) se přesunete do jiné složky, tlačítko pro danou akci Uložit či Otevřít nefunguje.<p>
 
+### [Neopravená] V Safari přechod do adresního řádku nevypíná rychlou navigaci
+
+<p>Platformy a systémy: iPadOS 26 a 27<p>Podrobnější popis: Na iPadu při zapnuté rychlé navigaci po písmenech pokud v Safari přes CMD+L aktivujete adresní řádek tak se nevypne rychlá navigace a tedy nejde rovnou psát do adresy.<p>
+
 
