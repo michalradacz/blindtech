@@ -23,13 +23,13 @@ Tagy: apple, apple27, testováníí
 Jak je mi po instalaci iPadOS 27? Upřímně, vůbec nijak. A to není dobrá zpráva ani pro nás.
 
 Dlouho jsem se nevyjadřoval k novým operačním systémům od Applu a k tomu, co společnost představila, respektive nepředstavila, na své keynote 8. června. Důvodem je mé upřímné zklamání, až téměř znechucení. Všichni jsme tak nějak očekávali, že v systémech nenastane žádná velká revoluce a že se nedočkáme bombastických nových funkcí. Systémy jsou již natolik propracované, že každá novinka je spíše jen vylepšením něčeho, co by systém už dávno umět mohl.
-Nečekal jsem ale, že se nedozvíme vůbec nic kromě planých slibů a nepravdivých tvrzení o tom, jak skvěle bude fungovat Apple Intelligence. 
+Nečekal jsem ale, že se nedozvíme vůbec nic kromě planých slibů a nepravdivých tvrzení o tom, jak skvěle bude fungovat Apple Intelligence.
 
 Pro ilustraci atmosféry, během pondělní keynote jsem si jako jediný z naší redakce ani neotevřel tradiční čokomlíčko, protože k tomu z mého pohledu nebyl absolutně žádný důvod.
-Říkal jsem si, že Apple možná jen vsadil na marketingovou bombu a soustředil se výhradně na svou umělou inteligenci, ale doufal jsem, že se za sliby ohledně Siri a AI skrývá i něco víc. 
+Říkal jsem si, že Apple možná jen vsadil na marketingovou bombu a soustředil se výhradně na svou umělou inteligenci, ale doufal jsem, že se za sliby ohledně Siri a AI skrývá i něco víc.
 Po několika dnech, kdy opadla první vlna stahování, jsem se v pondělí večer rozhodl upgradovat svůj iPad na iPadOS 18. A výsledek? Vůbec nic nového. Částečně za to samozřejmě může česká lokalizace; s americkým účtem a v angličtině by byl zážitek pravděpodobně jiný, to jsem zatím nezkoušel.
 Nenašel jsem však žádné novinky, a to ani v systému, ani v aplikacích. Jsem z toho zklamaný, protože Apple neopravil ani řadu chyb, které se objevily v iPadOS 26, a naopak se mu podařilo přidat některé nové. Některé z nich bohužel souvisí s přístupností. Například se zapnutým VoiceOverem nelze ovládat vysouvání a zasouvání Docku, což je na iPadu poměrně zásadní problém. Jistě nejsem sám, kdo Dock aktivně používá pro rychlý přístup k oblíbeným aplikacím a naposledy otevřeným položkám.
-Nyní mám prostě smůlu. Dock nelze vysunout ani pomocí systémové klávesové zkratky, ani tou pro VoiceOver. Předpokládám, že Apple podobné nedostatky v nadcházejících verzích opraví. 
+Nyní mám prostě smůlu. Dock nelze vysunout ani pomocí systémové klávesové zkratky, ani tou pro VoiceOver. Předpokládám, že Apple podobné nedostatky v nadcházejících verzích opraví.
 
 Ukazuje se však, že nejenže žádné nové funkce nepřibyly, ale v Applu se ani neobtěžovali s řádným otestováním funkcionality, kterou měli ponechat beze změn. Na fungování Docku, oken a multitaskingu se totiž v nové verzi systému nic nezměnilo. Proto mě překvapuje, že i když na to vývojáři nesahali, dokázali to rozbít. To také vyžaduje jistý um.
 
@@ -69,7 +69,7 @@ Komplexní ale uživatelsky jednoduchá Databázová aplikace pro osobní datab�
 
 ### Podrobnější popis
 
-Univerzální databázová aplikace, ve které si databázi čehokoliv může udělat opravdu každý.<p>Co se mi líbí<ul><li>Naprostá volnost evidence čehokoliv. Vše je buď Collection (Kolekce) a v něm entity (druh) a jednotlivé documents (dokumenty). Máte tak neomezené možnosti databáze<li>Jednoduché na pochopení fungování, využívá standardní mechanismy, jako je tlačítko Zpět, nadpis okem, rozložení nabídky vpravo, apod. Ve všech částech aplikace se chová stejně<li>U záznamu můžete přes tlačítko More sdílet obsah daného záznamu, co je ale skvělé, je že si můžete před sdílením vybrat jen ta pole, co chcete sdílet.  <li>Skvěle vyřešené filtrování přes rychlé indexy. Pokud si v databázi přes More/ Indexes vytvoříte filtr a klepnete vedle něj na Favorite, objeví se vám nad záznamy sbalovací lišta s takovými rychlými filtry  <li>U filtrování podle data lze vybrat nejen konkrétní datum, ale třeba jen Srpen 2024 a všechny záznamy, to je také ojedinělé  <li>Export do CSV a JSON podle obecných schémat  <li>Na iPadu trojsloupcové rozhraní, sidebar s databázemi, záznamy v databázi a v pravo ještě detail záznamu</ul>
+Univerzální databázová aplikace, ve které si databázi čehokoliv může udělat opravdu každý.<p>Co se mi líbí<ul><li>Naprostá volnost evidence čehokoliv. Vše je buď Collection (Kolekce) a v něm entity (druh) a jednotlivé documents (dokumenty). Máte tak neomezené možnosti databáze<li>Jednoduché na pochopení fungování, využívá standardní mechanismy, jako je tlačítko Zpět, nadpis okem, rozložení nabídky vpravo, apod. Ve všech částech aplikace se chová stejně<li>U záznamu můžete přes tlačítko More sdílet obsah daného záznamu, co je ale skvělé, je že si můžete před sdílením vybrat jen ta pole, co chcete sdílet. <li>Skvěle vyřešené filtrování přes rychlé indexy. Pokud si v databázi přes More/ Indexes vytvoříte filtr a klepnete vedle něj na Favorite, objeví se vám nad záznamy sbalovací lišta s takovými rychlými filtry <li>U filtrování podle data lze vybrat nejen konkrétní datum, ale třeba jen Srpen 2024 a všechny záznamy, to je také ojedinělé <li>Export do CSV a JSON podle obecných schémat <li>Na iPadu trojsloupcové rozhraní, sidebar s databázemi, záznamy v databázi a v pravo ještě detail záznamu</ul>
 
 ### Popis přístupnosti
 
@@ -82,11 +82,42 @@ Aplikace má některé jednoduché mechanismy, ale dají se s ní vytvářet vel
 ### Odkazy
 
 * Apple AppStore: https://apps.apple.com/app/id1568395334
-* Google Play: 
-* Webová aplikace: 
+* Google Play:
+* Webová aplikace:
 * Webové stránky aplikace: https://collectionsdb.com/
 
 [Nápověda k Collections](https://collectionsdb.com/en/help/get-started)
+
+### Další informace
+
+
+
+## ContactSync
+
+Tagy: Produktivita, iOS, iPadOS, Přístupnost 5 z 5
+
+Synchronizace kontaktů mezi účtem Apple a Google a dalšími účty<br>Produktivita / iOS, iPadOS / přístupnost 5 z 5
+
+### Podrobnější popis
+
+Aplikace umožňuje jednosměrnou i obousměrnou synchronizaci kontaktů a všech jejich informací mezi Google contacts, účty AppleID kontakty a dalšími účty (tŕeba O365 nebo Exchange), pokud je máte v systémuj ako systémové účty. Vše se dá nastavit, umí to i automatickou synchronizaci a skvělý je preview změn před samotnou faktickou synchronizací.
+
+### Popis přístupnosti
+
+Plně přístupná, poslední roky věnoval autor i zlepšení přehlednosti.
+
+### Stručně k ovládání
+
+Aplikace má standardní ovládání. Důležitý je první a druhý tab, kdy v prvním se určuje zdroj a cíl a zda jde o jednostrannou či obousměrnou synchronizaci a pak se dá vše detailně nastavit. Druhý tab je automatická synchronizace, která je buď podle času a nebo podle změny, což je šalamounsky řešeno workaroundem přes GPS pozici (proto chce tahle funkce přístup k poloze a k pohybu), což skvěle funguje, narozdíl od časové synchrtonizace jeź často neproběhne, protože iOS aplikaci uspí. Super je i synchronizace skupin, což je jinak příšerný voser.
+
+### Odkazy
+
+* Apple AppStore: https://apps.apple.com/cz/app/contacts-sync-for-google/id454390333?l=cs
+* Google Play:
+* Webová aplikace:
+* Webové stránky aplikace:
+
+
 
 ### Další informace
 
@@ -100,7 +131,7 @@ Pokročilý webový outline editor, obdoba OmniOutlineru nebo Cargo Outlineru<br
 
 ### Podrobnější popis
 
-Tato aplikace umožňuje editovat takzvaný Outliner neboli dokument, který je hierarchickým stromem jednotlivých částí, ve kterém mohou mít svoje podčásti a další podčásti a takhle se vlastně skládá dohromady to, co potřebujete. Je to velice univerzální nástroj. Můžete v tom dělat jak dokumenty, tak ale třeba i nějaké nákupní seznamy nebo seznamy úkolů. Aplikace má velice pokročilé funkce, jako například typ záznamu,  jednotlivé úrovně nadpisů, úplnou podporu formátu OPML a nebo export do formátu HTML a dokonce i DOCX a Markdown. Kromě samotného obsahu řádku lze přidávat i další sloupce, sloupec přitom může být číslo, datum, text, zaškrtávátko, čas, trvání a nebo výběr ze seznamu. Kombinuje se tak hierarchie a databáze.
+Tato aplikace umožňuje editovat takzvaný Outliner neboli dokument, který je hierarchickým stromem jednotlivých částí, ve kterém mohou mít svoje podčásti a další podčásti a takhle se vlastně skládá dohromady to, co potřebujete. Je to velice univerzální nástroj. Můžete v tom dělat jak dokumenty, tak ale třeba i nějaké nákupní seznamy nebo seznamy úkolů. Aplikace má velice pokročilé funkce, jako například typ záznamu, jednotlivé úrovně nadpisů, úplnou podporu formátu OPML a nebo export do formátu HTML a dokonce i DOCX a Markdown. Kromě samotného obsahu řádku lze přidávat i další sloupce, sloupec přitom může být číslo, datum, text, zaškrtávátko, čas, trvání a nebo výběr ze seznamu. Kombinuje se tak hierarchie a databáze.
 
 ### Popis přístupnosti
 
@@ -108,12 +139,12 @@ Aplikace je webová a je stoprocentně přístupná. Používá jen standardní 
 
 ### Stručně k ovládání
 
-Aplikace je plně webová, jedná se o jednosouborovou aplikaci, kterou můžete provozovat jak online na internetu, tak si ji stáhnout z GitHubu jako jeden HTML soubor a používat ji ve svém prohlížeči i bez připojení k internetu. Protože se jedná o poměrně pokročilý nástroj s mnoha různými funkcemi, může se na první pohled zdát ovládání trochu složité, ale velice rychle si najdete svůj způsob. Aplikace je ve skutečnosti jednou webovou stránkou, která má v horní části běžná tlačítka pro otevření a uložení a import a export projektu. Ale taky tlačítka pro zkopírování celého projektu do schránky nebo vložení ze schránky.  Dále jsou v aplikaci postranní panely, kde je jednak struktura dokumentu a jednak jsou tam věci, které lze pro jednotlivé projekty a dokumenty nastavit. Tady se nastavuje například číslování řádků, jednotlivé dodatečné sloupce a jejich atributy a nebo typy a úrovně nadpisů pro jednotlivé úrovně hierarchie stromu.  Hlavní část okna zabírá osnova, která je uvozena nadpisy a v rámci této osnovy je potom realizována tvorba a úprava jednotlivých řádků, jejich  odsazování v rámci hierarchie, včetně přesunu a změny úrovně, ale také úprava jednotlivých sloupců v daném řádku, která se realizuje v samostatném okně editoru, aby to celé bylo přístupné.  Samotná aplikace nabízí možnost otevření ukázkového souboru a má v sobě poměrně podrobnou nápovědu včetně informací o klávesovém ovládání.
+Aplikace je plně webová, jedná se o jednosouborovou aplikaci, kterou můžete provozovat jak online na internetu, tak si ji stáhnout z GitHubu jako jeden HTML soubor a používat ji ve svém prohlížeči i bez připojení k internetu. Protože se jedná o poměrně pokročilý nástroj s mnoha různými funkcemi, může se na první pohled zdát ovládání trochu složité, ale velice rychle si najdete svůj způsob. Aplikace je ve skutečnosti jednou webovou stránkou, která má v horní části běžná tlačítka pro otevření a uložení a import a export projektu. Ale taky tlačítka pro zkopírování celého projektu do schránky nebo vložení ze schránky. Dále jsou v aplikaci postranní panely, kde je jednak struktura dokumentu a jednak jsou tam věci, které lze pro jednotlivé projekty a dokumenty nastavit. Tady se nastavuje například číslování řádků, jednotlivé dodatečné sloupce a jejich atributy a nebo typy a úrovně nadpisů pro jednotlivé úrovně hierarchie stromu. Hlavní část okna zabírá osnova, která je uvozena nadpisy a v rámci této osnovy je potom realizována tvorba a úprava jednotlivých řádků, jejich odsazování v rámci hierarchie, včetně přesunu a změny úrovně, ale také úprava jednotlivých sloupců v daném řádku, která se realizuje v samostatném okně editoru, aby to celé bylo přístupné. Samotná aplikace nabízí možnost otevření ukázkového souboru a má v sobě poměrně podrobnou nápovědu včetně informací o klávesovém ovládání.
 
 ### Odkazy
 
-* Apple AppStore: 
-* Google Play: 
+* Apple AppStore:
+* Google Play:
 * Webová aplikace: https://nastroje.egdilna.cz/outliner
 * Webové stránky aplikace: https://nastroje.egdilna.cz/#outliner
 
@@ -144,8 +175,8 @@ V aplikaci se udělá nastavení spojení a repozitářů a pak jsou vidět v ap
 ### Odkazy
 
 * Apple AppStore: https://apps.apple.com/cz/app/source-files-git-storage/id6450856155?l=cs
-* Google Play: 
-* Webová aplikace: 
+* Google Play:
+* Webová aplikace:
 * Webové stránky aplikace: https://sourcefiles.app
 
 
@@ -204,5 +235,17 @@ A pokud jste objevili něco sami a rádi byste to tady viděli, nebo se na cokol
 ### [Neopravená] V Safari přechod do adresního řádku nevypíná rychlou navigaci
 
 <p>Platformy a systémy: iPadOS 26 a 27<p>Podrobnější popis: Na iPadu při zapnuté rychlé navigaci po písmenech pokud v Safari přes CMD+L aktivujete adresní řádek tak se nevypne rychlá navigace a tedy nejde rovnou psát do adresy.<p>
+
+### ❗️[Neopravená] Neaktuální čas na ploše a v záhlaví
+
+<p>Platformy a systémy: iOS 27<p>Podrobnější popis: Obćas se stane, že se při zobrazení času na ploše a hlášení s VoiceOverem nečte čas aktuální, ale nějaký dřívější nacachovaný. Děje se to na ploše po probuzení obrazovky a v horní systémové části.<p>
+
+### [Neopravená] Špatné překlady třeba v aplikaci Telefon
+
+<p>Platformy a systémy: iOS 27, iPadOS 27<p>Podrobnější popis: Na některých místech jsou špatné překlady do češtiny, třeba v aplikaci Telefon je zelené sluchátko (vytočit) čteno jako Přijmout hovor, tedy se kdosi neobtěžoval s rozděleným překladem prvku. Souvisí to ale i se sdružováním systémových prvků napříč aplikacemi, takže to není jen chyba překladu.<p>
+
+### ❗️[Nová] Špatné čtení s VoiceOverem v aplikaci Knihy
+
+<p>Platformy a systémy: iOS 27, iPadOS 27<p>Podrobnější popis: VoiceOver čte docela příšerně (a někdy vůbec) v aplikaci Knihy.<p>
 
 
