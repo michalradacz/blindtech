@@ -10,10 +10,32 @@
 
 20.7.2026: Nová sekce [Chyby v OS Apple](#chyby-v-os-apple) kde jak sám název napovídá budeme sbírat informace o chybách v iOS/iPadOS/MacOS stran přístupnosti. Tak se tam nezapomeňte občas mrknout.
 
-
 # Články
 
 articles
+
+## Praktické použití AI - bude vám pomáhat s tvornou snadno čitelného textu
+
+Datum: 22. 9. 2026
+
+Tagy: přístupnost, nástroje
+
+Umělá inteligence umí leccos, jen jí to často musíte dost drsně naučit. A to je i případ nového nástroje pro AI, který umožní i lajkům tvořit takzvané snadno čitelné přístupné texty.
+
+ETR je text pro snadné čtení (jako easy to read). Jde o to tvořit texty tak, aby byly srozumitelné. Začalo to především pro osoby se mentálním postižením, ale dnes to má daleko širší záběr. A já měl úkol, když se tak hrabu v té umělé inteligenci, naučit jí s tímhle pomáhat.
+
+A tak jsem vytvořil skill pro AI, co umí převod normálního nesrozumitelného textu do podoby ETR, sledování pravidel apod. A nezůstalo, jak je u mě zvykem, jen u prostého skillu pro AI. Ten je mimochodem dost vymazlenej.
+
+Udělal jsem [Mikroweb s nástroji nejen pro AI ke tvorbě snadno čitelného textu](https://shm.to/etrcz)
+
+A tam najdete nejen samotný AI skill fungující ve všech nástrojích, ale i další technicky orientované nástroje, jako jsou sémantická jazyková pravidla pro český i anglický ETR apod. Koho to zajímá, mrkněte se sami.
+
+Cílem je, aby úřadům a dalším institucím tvořícím texty v ETR umělá inteligence pomáhala, oni se to tím učili a hlavné aby se konečně hnula tvorba ETR nejen ve veřejné správě.
+
+Jak to funguje? Stáhnete si připravený skill (což jsou detailní instrukce a skripty pro AI) a nasadíte si si ho na váš AI nástroj (návody pro nejběžnější jsou na tom webu). Pak jen řeknete, aby použila skin etr a dáte jí vstupní text, třeba nějaké podmínky pro klienty apod. A výstupem bude text ve formátu ETR.
+
+Skill jsme trénovali na přibližně 1500 iteracích, ale samozřejmě, pokud budou nějaké poznatky a náměty na vylepšení, rádi vydáme novou verzi. A mimochodem na onom mikrowebu, jak už jsem psal, je těch jazykových nástrojů pro ETR více.
+
 
 ## Nic, ale naprosto nic nového v iPadOS 27
 
