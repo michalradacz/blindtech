@@ -14,6 +14,18 @@
 
 articles
 
+## Workshop Jak na přístupné akce
+
+Datum: 23.9.2026
+
+Tagy: akce, odjinut
+
+Přednášek a prezentací a workshopů o přístupnosti jsou mraky a to i těch Českých. Ale jedna mě zaujala, protože to jinde nenajdete. A to byl videoworkshop na téma, jak udělat fyzickou a nebo hybridní akci přístupnou. A to je dost ojedinělé, i s tím, že ojedinělé jsou praktické tipy a postřehy zmíněné na workshopu.
+
+Nebudu to vokecávat, to si prostě musíte prohlídnout a poslechnout...
+
+[Přístupné akce krok za krokem (záznam webináře z 12. 9. 2025) - YouTube](https://www.youtube.com/watch?v=waiNBxCgaMg&list=WL&index=1&t=2298s)
+
 ## Praktické použití AI - bude vám pomáhat s tvornou snadno čitelného textu
 
 Datum: 22. 9. 2026
